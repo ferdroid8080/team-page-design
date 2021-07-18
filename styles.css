@@ -1,0 +1,128 @@
+:root {
+  --primary-font: 'PT Serif', sans-serif;
+  --secondary-font: 'Poppins', sans-serif;
+  --footer-font: 'Montserrat', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #000;
+}
+
+h1 {
+  font-family: var(--primary-font);
+  letter-spacing: -0.045rem;
+  line-height: 47px;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.container {
+  margin: 71px 10px 10px 10px;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.container--inner {
+  flex: 1 0 auto;
+}
+
+.header--title {
+  margin: 0px 0 10px 0;
+}
+
+.team-description {
+  margin-top: 39px;
+}
+
+.team-description h4{
+  font-weight: 600;
+  font-family: var(--secondary-font);
+  text-transform: uppercase;
+  font-size: 18px;
+  margin: 0px 0 10px 0;
+}
+.team-description p {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.photo-members--grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin: 60px 0 130px 0;
+}
+
+.second {
+  padding-top: 50px;
+}
+
+.photo-members--grid .photo--item {
+  padding: 10px;
+  width: 90%;
+  position: relative;
+}
+
+.photo--grid-item h4 {
+  margin-left: 10px;
+  font-family: var(--secondary-font);
+  font-size: 27px;
+}
+
+.photo--item p {
+  position: absolute;
+  transform: rotate(90deg);
+  top: 50px;
+  right: -50px;
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+footer p {
+  font-family: var(--footer-font);
+  font-weight: 500;
+  font-size: 14px;
+  color: #a9a9a9;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media only screen and (min-width: 1440px) {
+
+  .container {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  header h1 {
+    flex: 4;
+  }
+  header .team-description {
+    flex: 2;
+    padding: 0 90px 0 0;
+  }
+
+  .photo-members--grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .middle {
+    margin-top: 120px;
+  }
+
+}
